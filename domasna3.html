@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="hang"><img id="hang-image" src="besilka.png" alt="Hangman"></div>
+        <h1>Guess the word</h1>
+        <div id="word-display"></div>
+        <div id="guess-input-container">
+            <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter">
+            <button onclick="checkGuess()">Check</button>
+        </div>
+        <div>Incorrect Attempts: <span id="attempts-count">0</span></div>
+        <div id="result-popup" class="popup">
+            <button onclick="startNewGame()">New game</button>
+        </div> 
+        <div id="counter">
+            <div id="count-number">30</div>
+        </div>
+    </div>
+
+</body>
+</html>
